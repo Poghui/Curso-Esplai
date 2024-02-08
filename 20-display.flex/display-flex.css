@@ -1,0 +1,41 @@
+.box {
+    display: flex;
+    background-image: url(./bg.jpg);
+    width: 750px;
+    height: 571px;
+    margin: auto;
+    text-align: justify;
+}
+
+.text {
+    width: 250px;
+    padding: 10px;
+}
+
+.container {
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    margin: auto;
+}
+
+.imgtext {
+    width: 150px;
+    padding: 10px;
+
+}
+
+.img {
+    image: url(./logo.png);
+    width: 150px;
+    height: 118px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+
+.text23 {
+    border-left: 1px solid black;
+    padding: 10px;
+    text-align: justify;
+}

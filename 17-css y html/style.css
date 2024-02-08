@@ -1,0 +1,47 @@
+.back {
+    background: black;
+    width: 100%;
+    height: 100%;
+}
+
+h1.titulo {
+    color: white;
+    padding: 15px
+}
+
+
+.derecha {
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+.gris {
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: 50%;
+    padding: 20px;
+    background-color: gray;
+    border: 3px dotted
+}
+
+p.ama {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    background-color: yellow;
+    border: 3px solid red;
+}
+
+.verde {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+    margin-right: 50%;
+    background-color: green;
+    border: 3px dashed greenyellow;
+}
