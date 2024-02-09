@@ -1,0 +1,51 @@
+.body {
+    font-family: 'Times New Roman'
+}
+
+.tit {
+    background-color: gray;
+    margin-bottom: 0px;
+}
+
+.subtit {
+    background-color: lightgray;
+    text-align: right;
+    margin-top: 0px;
+    border-bottom: 5px dotted grey;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.caja {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px dotted gray;
+    border-right: 1px dotted gray;
+    width: 200px;
+    margin: 5px;
+}
+
+h3 {
+    text-align: center;
+    background-color: lightgray;
+    padding: 4px;
+}
+
+.a1 {
+    border: 1px solid black;
+    text-align: center;
+    width: 180px;
+    margin: auto;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+h4 {
+    background-color: lightgoldenrodyellow;
+    margin: 0px;
+    text-align: right;
+}
