@@ -1,5 +1,5 @@
 body {
-    background: gainsboro;
+    background: rgb(90, 30, 30);
 }
 
 @font-face {
@@ -34,4 +34,36 @@ ul a {
 
 ul a:hover {
     background-position: -60px center;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    margin: 40px;
+    color: rgb(90, 30, 30);
+}
+
+div:hover {
+    width: 600px;
+}
+
+.all {
+    width: 300px;
+    height: 300px;
+    background: red;
+    font-size: 12px;
+    transition: width 1s, height 1s, background 5s, font-size 2s;
+    float: right;
+
+}
+
+.all:hover {
+    width: 800px;
+    height: 800px;
+    background: blue;
+    font-size: 500px
 }
