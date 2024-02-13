@@ -1,0 +1,37 @@
+body {
+    background: gainsboro;
+}
+
+@font-face {
+    font-family: minecraft;
+    src: url(../26-fonts/Minecraft.ttf);
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li {
+    margin: 10px;
+}
+
+ul a {
+    list-style: none;
+    font-family: minecraft;
+    border: 2px solid yellow;
+    padding: 20px;
+    background: url(./ironman.png), linear-gradient(to bottom, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%);
+    transition: 2s;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+ul a:hover {
+    background-position: -60px center;
+}

@@ -1,0 +1,35 @@
+body {
+    display: flex;
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    background-color: lightsalmon;
+    transition: 1s;
+    text-align: justify;
+    padding: 20px;
+}
+
+div:hover {
+    background-color: red;
+    transition: 3s;
+}
+
+span {
+    margin-left: 60px;
+    margin-top: 60px;
+    transition: 1s;
+    text-shadow: 50px 50px 1px blue,
+        -50px 50px 1px green,
+        50px -50px 1px yellow,
+        -50px -50px 1px red;
+    font-size: 30px;
+}
+
+span:hover {
+    text-shadow: -50px -50px 1px violet,
+        50px -50px 1px brown,
+        -50px 50px 0px purple,
+        50px 50px 0px yellow;
+}

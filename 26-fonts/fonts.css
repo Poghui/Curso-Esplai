@@ -1,0 +1,18 @@
+@font-face {
+    font-family: minecraft;
+    src: url(./Minecraft.ttf)
+}
+
+@font-face {
+    font-family: impact2;
+    src: url(./Impact\ Label.ttf);
+}
+
+p {
+    font-family: minecraft;
+}
+
+.prueba {
+    font-family: impact2;
+    font-style: italic;
+}

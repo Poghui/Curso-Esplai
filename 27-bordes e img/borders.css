@@ -1,0 +1,14 @@
+div {
+    border-width: 35px;
+    border-image: url(./mundo\ \(1\).svg);
+    border-style: solid;
+}
+
+.prueba {
+    padding: 10px;
+    border-image: url(https://img.freepik.com/vector-premium/marco-decorativo-vintage-esquina-filigrana-borde-adornado_53562-15401.jpg?w=360) 50 50 round;
+}
+
+.prueba2 {
+    border-image: url(./border.png) 30 30 stretch;
+}

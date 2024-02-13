@@ -1,0 +1,31 @@
+.panteon {
+    width: 722px;
+    height: 480px;
+    background-image: url(./panteon.jpg);
+    margin: auto;
+    display: flex;
+}
+
+.container {
+
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 200px;
+    justify-content: center;
+    width: 722px;
+
+}
+
+.text {
+    width: 50px;
+    overflow: auto;
+}
+
+body {
+    scrollbar-width: thin;
+    /* "auto" or "thin" */
+    scrollbar-color: blue orange;
+    /* scroll thumb and track */
+}
