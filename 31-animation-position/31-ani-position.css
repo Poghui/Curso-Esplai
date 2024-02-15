@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+}
+
+a {
+    background-color: lightgray;
+    border-radius: 25px;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    width: 200px;
+    transition: 2s;
+}
+
+li {
+    list-style: none;
+
+}
+
+.text {
+    float: right;
+    position: absolute;
+    margin-left: 280px;
+    z-index: -1;
+
+}
+
+a:hover {
+    width: 500px;
+    background-color: aquamarine;
+}
+
+.yellow a:hover {
+    width: 500px;
+    background-color: yellow;
+}
+
+.orange a:hover {
+    width: 500px;
+    background-color: orange;
+}
+
+.red a:hover {
+    width: 500px;
+    background-color: red;
+}
+
+.violet a:hover {
+    width: 500px;
+    background-color: violet;
+}
