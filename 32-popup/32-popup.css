@@ -1,0 +1,11 @@
+.popup {
+    background-image: url(./ghostface___transparent_by_asthonx1_dbm6ubm-fullview.png);
+    width: 1024px;
+    height: 1024px;
+    display: none;
+
+}
+
+a:hover .popup {
+    display: block;
+}
