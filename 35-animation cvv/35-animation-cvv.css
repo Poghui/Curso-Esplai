@@ -6,9 +6,14 @@
 
 .contenido {
     background: green;
-    animation: move 1s forwards;
+    animation: move 1s forwards 200;
     height: 30px;
 }
+/* animation-name:move;
+animation-duration:2s;
+animation-timing-function:ease-in;
+animation-iteration-count:2;
+infinite para infinitas repeticiones */
 
 @keyframes move {
     from {

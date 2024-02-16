@@ -12,3 +12,8 @@ ej:<p> -->
 .all:hover .foto {
 opacity: 0.5;}
 <!-- hace la ainmación a la .foto cuando pasa el cursos por encima de todo el .all -->
+
+<!--animation-name:move;
+animation-duration:2s;
+animation-timing-function:ease-in;
+animation-iteration-count:2; /* infinite para infinitas repeticiones */-->
