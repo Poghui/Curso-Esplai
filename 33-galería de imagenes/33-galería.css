@@ -1,0 +1,32 @@
+.all {
+    background-color: black;
+    width: 538px;
+    height: 570px;
+    position: relative;
+}
+
+.foto {
+    position: absolute;
+    transition: 1s;
+}
+
+p {
+    text-align: center;
+    top: 250px;
+    color: white;
+    opacity: 0;
+    transition: 1s;
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-size: x-large;
+}
+
+/* position:relative, ocupa todo el ancho de la capa(div) y si es position:absolute, ocupa hasta donde su propio espacio */
+.all:hover .foto {
+    opacity: 0.5;
+}
+
+.all:hover p {
+    opacity: 1;
+}

@@ -1,0 +1,14 @@
+<!-- p:hover{ background-color} cuando pasas el cursos por encima se pone el fondo -->
+
+<!-- flex-wrap
+wrap: Los elementos de la capa se distribuirán en una o varias filas en función de su tamaño.
+nowrap: Los elementos de la capa estarán sí o sí en una sola fila. -->
+
+<!-- <header>para la cabecera</header>/ <footer>ultima parte</footer> -->
+
+<!-- position:relative, ocupa todo el ancho de la capa(div) y si es position:absolute, ocupa hasta donde su propio espacio(toda la página)
+ej:<p> -->
+
+.all:hover .foto {
+opacity: 0.5;}
+<!-- hace la ainmación a la .foto cuando pasa el cursos por encima de todo el .all -->
