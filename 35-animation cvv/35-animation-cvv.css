@@ -9,6 +9,7 @@
     animation: move 1s forwards 200;
     height: 30px;
 }
+
 /* animation-name:move;
 animation-duration:2s;
 animation-timing-function:ease-in;
@@ -52,5 +53,15 @@ infinite para infinitas repeticiones */
 
     to {
         width: 50%;
+    }
+}
+
+img {
+    animation: espiral 2s infinite linear;
+}
+
+@keyframes espiral {
+    to {
+        transform: rotate(360deg);
     }
 }
