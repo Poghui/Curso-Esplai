@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    width: 1024px;
+    margin: auto;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-columns: repeat(5, 1fr);si quiero que sean iguales, sino tengo que poner los px o fr por cada columna ej: grid-template-columns:1fr 0.5fr 1fr 0.5fr 1fr; */
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+}
+
+img {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.col {
+    text-align: justify;
+    background-color: red;
+}

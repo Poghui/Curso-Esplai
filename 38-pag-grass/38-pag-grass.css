@@ -1,0 +1,183 @@
+@font-face {
+    font-family: font;
+    src: url(./grassy/fuente.woff);
+}
+
+body {
+    font-family: font;
+    font-weight: bold;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(22, 160, 133, 0.7);
+    display: inline-block;
+    position: fixed;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu {
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.menu a {
+    padding: 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu a:hover {
+    background-color: rgba(22, 160, 133, 0.3);
+}
+
+.grassy {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    margin-top: 0px;
+}
+
+.grassy h1 {
+
+    margin-bottom: 0px;
+    font-size: 5em;
+    font-weight: 5px;
+
+}
+
+.grassy h2 {
+    margin-top: 0px;
+    font-size: medium
+}
+
+.pic {
+    background: url(./grassy/pic01.jpg);
+    height: 500px;
+}
+
+.caja {
+    width: 1024px;
+    margin: auto;
+    padding: 20px;
+}
+
+.col_left {
+    width: 650px;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: justify;
+}
+
+.col_left h2 {
+    color: green;
+    margin-bottom: 30px;
+}
+
+.col_left h3 {
+    font-size: medium;
+    color: rgb(49, 131, 49);
+}
+
+.col_right {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 50px;
+}
+
+.col_right ul {
+    padding-left: 0px;
+}
+
+.col {
+    display: inline-block;
+    vertical-align: top;
+    width: 320px;
+    text-align: justify;
+}
+
+.lista {
+    list-style: none;
+    line-height: 40px;
+
+}
+
+.lista a {
+    color: black;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.columnas {
+    width: 1024px;
+    padding: 20px;
+    margin: auto;
+}
+
+.lista2 {
+    list-style: none;
+    line-height: 40px;
+}
+
+.col ul {
+    padding-left: 0px;
+}
+
+.social li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+
+.social .animation a {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+
+
+}
+
+.social .animation a img {
+    transition: 2s;
+}
+
+.final {
+    background: rgba(22, 160, 133, 1);
+    padding: 40px;
+}
+
+.final p {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+}
+
+.social .animation a:hover img {
+    transform: scale(1.5, 1.5);
+}

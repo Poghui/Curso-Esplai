@@ -17,3 +17,5 @@ opacity: 0.5;}
 animation-duration:2s;
 animation-timing-function:ease-in;
 animation-iteration-count:2; /* infinite para infinitas repeticiones */-->
+
+  /* grid-template-columns: repeat(5, 1fr); si quiero que sean iguales, sino tengo que poner los px o fr por cada columna ej: grid-template-columns:1fr 0.5fr 1fr 0.5fr 1fr; */
