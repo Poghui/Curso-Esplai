@@ -13,7 +13,7 @@ for (let i = 0; i < 100; i++) {
 // Para números divisibles por 3 y 5, imprimir “FizzBuzz”.
 // En cualquier otro caso, imprimir el número.
 
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i <= 20; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
         console.log('FizzBuzz');
     } else if (i % 3 === 0) {
@@ -22,4 +22,9 @@ for (let i = 0; i < 20; i++) {
         console.log('buzz');
     } else
         console.log(i)
+}
+
+let aux = 0
+for (let n = 5; n <= 0; n--) {
+
 }

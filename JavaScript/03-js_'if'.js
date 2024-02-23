@@ -15,7 +15,7 @@ if (20 == 10) {
     console.log('You got a false!')
 }
 
-const nota = 7
+const nota = 6
 if (nota < 5) { console.log('Suspenso') }
 if (nota === 5) { console.log('Aprobado por los pelos!') }
 if (nota > 5) { console.log('Aprobado') }
