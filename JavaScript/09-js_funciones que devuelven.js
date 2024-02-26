@@ -72,3 +72,64 @@ function testElse(val) {
 }
 const y = testElse(2)
 console.log(y)
+
+function duplica(nombre) {
+    return nombre + " and " + nombre;
+}
+
+//EJ:12
+function testSize(num) {
+    if (num < 5) return "Tiny"
+    else if (num < 10) return "Small"
+    else if (num < 15) return "Medium"
+    else if (num < 20) return "Large"
+    else if (num >= 20) return "Huge"
+}
+const o = testSize(10)
+console.log(o)
+
+//EJ:13
+function nand(a, b) {
+    return !(a && b)
+}
+const e = nand(true, true)
+console.log(e)
+
+function nand2(a, b) {
+    if (a && b) return false
+    else return true
+}
+const c = nand2(true, true)
+console.log(c)
+
+//EJ:14
+function nor(a, b) {
+    if (a && b) return false
+    else if (a) return false
+    else if (b) return false
+    else return true
+}
+const n = nor(false, false)
+console.log(n)
+
+// if (a===true && b===true) return false
+//     else if (a) return false
+// else if (b) return false
+// else return true
+
+function nor2(a, b) {
+    if (!a && !b) return true
+
+}
+const ñ = nor2(false, false)
+console.log(ñ)
+
+//EJ:15
+function xor(a, b) {
+    if (!a && !b) return false
+    else if (a && b) return false
+    else return true
+}
+const k = xor(false, true)
+console.log(k)
+

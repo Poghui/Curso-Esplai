@@ -10,7 +10,7 @@ let x = 3;
 x++;
 x = x * 2;
 x--;
-console.log(x);
+console.log(parseInt(x));
 
 let season = 'summer';
 let msg = `My favourite season is ${season}`

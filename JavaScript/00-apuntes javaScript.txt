@@ -1,1 +1,9 @@
 conts--> no se podrá cambiar el valor con un igual, en cambio con let sip
+
+(parseInt('nombre de la función')) cambia de número a string
+EJ:
+let x = 3;
+x++;
+x = x * 2;
+x--;
+console.log(parseInt(x))
