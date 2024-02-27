@@ -77,3 +77,114 @@ const laLetraEsta2 = tieneLetra2('Viba', 'v');
 console.log(laLetraEsta2);
 
 //EJ:13 Hacer una función crearPalabra que reciba como parámetro de entrada una letra y un número y genere una nueva palabra que tenga la letra introducida repetida tantas veces como indique el número.
+const crearPalabra = (letra, num) => {
+    let palabra = ''
+    for (let i = 0; i < num; i++) {
+        palabra += letra;
+    }
+    console.log(palabra);
+}
+crearPalabra('r', 7)
+
+//EJ:14 Completar el ejercicio anterior haciendo que en la nueva palabra generada las letras esten en mayúsculas.
+const crearPalabra2 = (letra, num) => {
+    let palabra = ''
+    for (let i = 0; i < num; i++) {
+        palabra += letra;
+    }
+    console.log(palabra.toUpperCase(num));
+}
+crearPalabra2('r', 7)
+
+//EJ:15 Hacer una función addGuiones que reciba como parámetro de entrada una cadena texto y devuelva una nueva cadena que tendrá un guion medio detrás de cada letra. Utilizar para ello un bucle for.
+const addGuiones = (txt) => {
+    let palabraGenerada = '';
+    for (let i = 0; i < txt.length; i++) {
+        const letra = txt[i];
+        palabraGenerada += letra + '-';
+    }
+    return palabraGenerada;
+}
+
+const nuevaPalabra = addGuiones('Marc');
+console.log(nuevaPalabra)
+
+//EJ:16 Hacer una función contadorDeLetras que reciba como parámetro de entrada una cadena de texto y una letra y devuelva el número de veces que esa letra esta presente en la palabra. Utilizar para ello un bucle for.
+const contadorDeLetras = (txt, letra) => {
+    let palabraGenerada = 0;
+    for (let i = 0; i < txt.length; i++) {
+        if (txt[i] === letra) palabraGenerada++;
+    }
+    return palabraGenerada;
+}
+const numeroDeVeces = contadorDeLetras('holoa', 'o')
+console.log(numeroDeVeces)
+
+//EJ:17 Realizar la evolución del ejercicio anterior sin tener en cuenta si la letra pasada como parámetro esta en mayúsculas o minúsculas.
+const contadorDeLetras2 = (txt, letra) => {
+    let palabraGenerada = 0;
+    for (let i = 0; i < txt.length; i++) {
+        if (txt[i].toUpperCase() === letra.toUpperCase()) palabraGenerada++;
+    }
+    return palabraGenerada;
+}
+const numeroDeVeces2 = contadorDeLetras2('hOloa', 'o')
+console.log(numeroDeVeces2)
+
+//EJ:18 Hacer una función contadorDeLetras2 que reciba como parámetro de entrada dos cadenas de texto y una letra y devuelva la cadena de texto en la que dicha letra esta más presente. Utilizar para ello un bucle for. No tener en cuenta si la letra pasada como parámetro esta en mayúsculas o minúsculas.
+
+const contadorDeLetras3 = (txt1, txt2, letra) => {
+    let contadorLetras1 = 0;
+    let contadorLetras2 = 0;
+
+    for (let i = 0; i < txt1.length; i++) {
+        if (txt1[i].toUpperCase() === letra.toUpperCase()) contadorLetras1++
+    }
+
+    for (let i = 0; i < txt1.length; i++) {
+        if (txt2[i].toUpperCase() === letra.toUpperCase()) contadorLetras2++
+    }
+
+    if (contadorLetras1 > contadorLetras2) return txt1;
+    else if (contadorLetras2 > contadorLetras1) return txt2;
+    else return 'son iguales';
+}
+const palabraMasLarga = contadorDeLetras3('ana', 'amor', 'A');
+console.log(palabraMasLarga);
+
+//EJ:19 Escribe una función llamada toCase que reciba como parámetro de entrada una cadena de texto y devuelva esa misma cadena de texto en minúsculas, un guión medio y de nuevo esa misma cadena de texto en mayúsculas.
+
+const toCase = txt => {
+    return txt.toLowerCase() + '-' + txt.toUpperCase();
+}
+const ambosTextos = toCase('Marc')
+console.log(ambosTextos)
+
+//EJ:20 Escribe una función llamada shortcut que tome dos cadenas de texto y devuelva la inicial de cada una de las dos cadenas.
+const shortCut = (txt1, txt2) => {
+    return txt1[0] + txt2[0]
+}
+const iniciales = shortCut('Hola', 'Adiós')
+console.log(iniciales)
+
+//EJ:21 Escribe una función llamada firstChar, que devuelva la primera letra que no sea un espacio cuando una cadena de texto es pasada. Para ello, podemos eliminar los espacios en blanco que pudiera haber al principio y al final de la cadena de texto utilizando la el método trim().Si no estás muy seguro de como funciona este método, consúltalo en internet, que no es tan difícil!.
+const firstChar = txt => {
+    return txt.trim()[0]
+}
+const letter = firstChar(' buenos días ')
+console.log(letter)
+
+//EJ:22 Escribe una función llamada indexOfIgnoreCase que reciba dos cadenas de texto y devuelva la posición de la primera ocurrencia de la segunda cadena de texto en la primera. La función no debería tener en cuenta mayúsculas y minúsculas.
+const indexOfIgnoreCase = (txt1, txt2) => {
+    return txt1.toUpperCase().indexOf(txt2.toUpperCase());
+}
+console.log(indexOfIgnoreCase('Amor', 'hol'))
+
+//EJ:23 Escribe una función llamada firstWord que reciba como parámetro de entrada una cadena de texto y devuelva la primera palabra de esa cadena. La primera palaba de la cadena serán todos los caracteres que hay hasta el primer espacio.
+const firstWord = txt => {
+    const whitespace = txt.indexOf(' ');
+    const result = txt.substring(0, whitespace);
+    return result
+}
+const v = firstWord("see and stop");
+console.log(v);
