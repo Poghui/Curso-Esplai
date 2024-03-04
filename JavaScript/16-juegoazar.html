@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let player = true;
+        while (player) {
+            const n = Math.floor(Math.random() * 2) + 1;
+            const userDoor = Number(prompt('Entras en una mazmorra con dos puertas. La puerta 1 y la puerta 2. Tras una de las dos puertas, se encuentra una muerte segura. ¿Serás un gran Mago o tendrás que volver a tu estudios? 1/2'));
+            if (userDoor === n) {
+                alert('Vas por el buen camino o Gran Sabio del Bosque de las Setas');
+            } else {
+                alert('Debes volver a la gran libreria del Bosque para desenvolupar tu sabiduría, Pequeño Mago');
+                player = false;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

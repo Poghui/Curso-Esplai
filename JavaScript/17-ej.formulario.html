@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let isRight = false;
+
+        const hasNumber = (myString) => /\d/.test(myString);
+
+        while (!isRight) {
+            const name = prompt('Introduce tu nombre, viajero!');
+            if (!hasNumber(name)) {
+                const real = prompt('Viajero tu nombre no tiene ningún número. ¿Es este tu nombre de aventurero? Yes/No');
+                if (real === 'Yes') {
+                    isRight = true;
+                    alert('¡Bienvenido al Gremio de Cazadores!')
+                } else {
+                    alert('¡Nos has mentido, maldito bastardo, serás ejecutado de inmediato!')
+                }
+            } else {
+                alert('¡Viajero recuerda que no debes utilizar hechicerías sin permiso (números)!');
+            }
+        }
+    </script>
+</body>
+
+</html>
