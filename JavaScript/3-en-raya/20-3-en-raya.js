@@ -34,13 +34,19 @@ printBoard();
 let isPlayer1 = true;
 const hasAnyBodyWon = false;
 while (!hasAnyBodyWon) {
+    printBoard();
     const n = prompt('Introduzca un número del 0 al 8');
     const player = isPlayer1 ? 'X' : 'O';
+    if (board[n] !== '_') {
+        alert('Posición ocupada');
+        continue;
+    }
     board[n] = player
+
     if (evaluateWin()) {
         alert('¡Enhorabuena player ' + player + '!')
     }
     isPlayer1 = !isPlayer1
-    printBoard();
+
 }
 

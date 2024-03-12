@@ -24,6 +24,7 @@ while (!hemosGanado) {
             letraEncontrada = true;
         }
     }
+
     if (!letraEncontrada) {
         alert('Has fallado');
     }
