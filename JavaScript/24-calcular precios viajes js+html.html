@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            width: 200px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label for="nights">Introduzca el número de noches</label> <input type="text" id="nights"
+            placeholder="Introduzca el número de noches">
+        <select id="target">
+            <option value="oviedo">Oviedo</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="madrid">Madrid</option>
+            <option value="tokyo">Tokyo</option>
+        </select>
+
+        <button>Calcular coste</button>
+        <br />
+        <label for="hotelCost">Coste hotel</label>
+        <input type="text" id="hotelCost"><br />
+
+        <label for="travelCost">Coste del avión</label>
+        <input type="text" id="travelCost">
+        <br />
+        <label for="rentCost">Coste del alquiler del coche</label>
+        <input type="text" id="rentCost">
+        <br />
+        <label for="totalCost">Coste total</label>
+        <input type="text" id="totalCost">
+
+
+    </div>
+
+
+    <script>
+
+        const calculateHotelCost = (numNights) => 140 * numNights;
+
+        const calculateAirplaneCost = (target, numNights) => {
+            let coste = 0;
+            if (target === "oviedo") {
+                coste = 15;
+            } else if (target === "barcelona" || target === "madrid") {
+                coste = 90;
+            } else if (target === "tokyo") {
+                coste = 700;
+            }
+            if (numNights > 3) coste *= 0.9;
+            return coste
+        }
+
+
+        const calculateRentingCarCost = (numNights) => {
+            let coste = 40 * numNights;
+            if (numNights > 7) coste -= 50;
+            else if (numNights > 3) coste -= 20;
+            return coste;
+        }
+
+        const calculateCost = () => {
+            const numNights = document.querySelector("#nights").value;
+            const target = document.querySelector("#target").value;
+
+            const hotelCost = calculateHotelCost(numNights);
+            const travelCost = calculateAirplaneCost(target, numNights);
+            const rentCost = calculateRentingCarCost(numNights);
+            let totalCost = hotelCost + travelCost + rentCost;
+
+            document.querySelector("#hotelCost").value = hotelCost;
+            document.querySelector("#travelCost").value = travelCost;
+            document.querySelector("#rentCost").value = rentCost;
+            document.querySelector("#totalCost").value = totalCost;
+
+        }
+
+        document.querySelector('button').addEventListener('click', calculateCost);
+    </script>
+</body>
+
+</html>
