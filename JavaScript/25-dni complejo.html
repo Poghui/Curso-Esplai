@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="dni">Introduce un dni sin la letra:
+    </label>
+
+    <input type="text" id="dni"> <br />
+
+    <label for="letter">La letra del DNI es:
+    </label>
+
+    <input type="text" id="result">
+    <button>Calcular</button>
+    <script>
+        const letters = 'TRWAGMYFPDXBNJZSQVHLCKE';
+        const calculate = (dni) => {
+            console.log(dni.length !== 8, isNaN(Number(dni)))
+            if (dni.length !== 8 || isNaN(Number(dni))) {
+                alert('El dni debe tener 8 dígitos y ser un número')
+            } else {
+                const rest = dni % 23;
+                const letter = letters[rest];
+                document.querySelector('#result').value = letter;
+            }
+        }
+        document.querySelector('button').addEventListener('click', () => {
+            const n = document.querySelector('#dni').value;
+            calculate(n)
+        })
+    </script>
+
+</body>
+
+</html>

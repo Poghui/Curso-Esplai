@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text">
+    <div id="content"></div>
+    <script>
+        const addParagraph = (event) => {
+            const number = document.querySelector('input').value;
+            let code = '';
+            for (let i = 0; i < number; i++) {
+                code += 'MARC';
+            }
+            document.querySelector('#content').innerHTML = code;
+        }
+
+        document.querySelector('input').addEventListener('input', addParagraph);
+        console.log(addParagraph)
+    </script>
+</body>
+
+</html>

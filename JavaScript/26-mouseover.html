@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="capa1" style="width: 300px;height: 300px;background-color: red;"></div>
+    <div id="capa2" style="width: 300px;height: 300px;background-color: yellow;"></div>
+    <script>
+        const mouseCapa2 = () => {
+            document.querySelector('#capa2').innerHTML = 'has pasado el mouse por la capa 1';
+        }
+        document.querySelector('#capa1').addEventListener('mouseover', mouseCapa2);
+    </script>
+</body>
+
+</html>
