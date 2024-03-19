@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1.Ejercicio: cuestionario
+Al pulsar el botón de Ver resultado, deben iluminarse las palabras correspondientes a las respuestas a la pregunta.
+Nota: un elemento «span» es una capa (div) alineada con el texto. -->
+    <p>¿Cuáles de los siguientes lenguajes son orientados a objetos? <span class="r1">Java</span>,VB6,<span
+            class="r2">C++</span>,
+        <span class="r3">C#</span>,Cobol?
+    </p>
+    <button id="result">Ver respuestas</button>
+    <script>
+        const answers = () => {
+            document.querySelector('.r1').style.backgroundColor = 'yellow';
+            document.querySelector('.r2').style.backgroundColor = 'yellow';
+            document.querySelector('.r3').style.backgroundColor = 'yellow';
+        }
+        document.querySelector('button').addEventListener('click', answers);
+    </script>
+</body>
+
+</html>
