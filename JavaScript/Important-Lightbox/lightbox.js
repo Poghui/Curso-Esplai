@@ -10,3 +10,4 @@ const hide = (e) => {
 }
 document.querySelector('.ver').addEventListener('click', show);
 document.querySelector('.ocultar').addEventListener('click', hide);
+document.querySelector('#overlay').addEventListener('click', hide);

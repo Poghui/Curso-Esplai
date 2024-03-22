@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            margin: auto;
+            width: 1100px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            transition: 1s;
+        }
+
+        .box.yellow {
+            background-color: yellow;
+        }
+
+        .box.orange {
+            background-color: orange;
+        }
+
+        .box.red {
+            background-color: red;
+        }
+
+        .disabled {
+            width: 0;
+            height: 0;
+            margin: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="link">
+        <a href="#" class="all">Todos</a>
+        <a href="#" class="yellow">Amarillo</a>
+        <a href="#" class="orange">Naranja</a>
+        <a href="#" class="red">Rojo</a>
+    </div>
+    <div class="container">
+        <div class="box yellow"></div>
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box yellow"></div>
+        <div class="box yellow"></div>
+        <div class="box red"></div>
+        <div class="box yellow"></div>
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box orange"></div>
+        <div class="box yellow"></div>
+    </div>
+</body>
+
+</html>
