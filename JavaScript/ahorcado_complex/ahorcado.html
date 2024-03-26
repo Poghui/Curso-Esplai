@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ahorcado {
+            background-image: url(./hangman-game_pm-1024x212.png);
+            width: 200px;
+            height: 212px;
+        }
+
+        button {
+            border-radius: 10px;
+            border-color: white;
+            background-color: red;
+            color: white;
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <h2>Ahorcado con JavaScript</h2>
+            <p class="hiddenWord"></p>
+            <p>Introduzca una letra:</p>
+            <input type="text"> <br>
+            <br>
+            <button>Verificar letra</button>
+        </div>
+        <div class="col">
+            <div class="ahorcado"></div>
+        </div>
+    </div>
+
+    <script src="./ahorcado.js"></script>
+</body>
+
+</html>
