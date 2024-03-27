@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content"></div>
+    <script>
+        fetch('https://api.mercadolibre.com/sites/MLA/search?q=malabares')
+            .then(res => res.json())
+            .then(res => {
+                console.log(res)
+                const mercado = res.results.map(obj => '<h4>' + obj.title + '</h4>' + '<img src=' + obj.thumbnail + '>').join('')
+                document.querySelector('.content').innerHTML = mercado
+                console.log(mercado)
+            })
+    </script>
+    <!-- <style>
+        .code {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+    
+            gap: 20px;
+            margin: auto;
+            max-width: 1200px;
+        }
+    
+        .product {
+            border: 3px solid #ccc;
+            border-radius: 15px;
+            text-align: center;
+        }
+    
+        .product img {
+            display: block;
+            margin: auto;
+        }
+    </style>
+    
+    <div class="code"></div>
+    
+    <script>
+        fetch('https://api.mercadolibre.com/sites/MLA/search?q=malabares')
+
+            .then(res => res.json())
+            .then(res => {
+                const products = res.results;
+                const code = products.map(product => (
+                    `
+                    <div class="product">
+                    <p>${product.title}</p>
+                    <img src="${product.thumbnail}"/>
+                    </div>
+                    `
+                ))
+                document.querySelector('.code').innerHTML = code.join('');
+                console.log(res)
+            })
+            .catch(err => console.error(err));
+    </script> -->
+
+</body>
+
+</html>

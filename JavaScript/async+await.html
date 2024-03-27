@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .code {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 20px;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .character {
+            border: 3px solid #ccc;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .product img {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="code"></div>
+
+
+    <script>
+
+        const miFuncion = async () => {
+
+            const res = await fetch('https://rickandmortyapi.com/api/character')
+            const data = await res.json();
+            console.log(data)
+            const characters = data.results;
+            const code = characters.map(character => (
+                `
+                    <div class="character">
+                    <p>${character.name}</p>
+                    <img src="${character.image}"/>
+                    </div>
+                    `
+            ))
+            document.querySelector('.code').innerHTML = code.join('');
+            console.log(res)
+        }
+
+        miFuncion();
+    </script>
+</body>
+
+</html>
